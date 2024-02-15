@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>FermeControler</servlet-name>
+        <servlet-class>ferme.FermeControler</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AnimalControler</servlet-name>
+        <servlet-class>ferme.AnimalControler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FermeControler</servlet-name>
+        <url-pattern>/FermeControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AnimalControler</servlet-name>
+        <url-pattern>/AnimalControler</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>FermeControler</welcome-file>
+    </welcome-file-list>
+</web-app>

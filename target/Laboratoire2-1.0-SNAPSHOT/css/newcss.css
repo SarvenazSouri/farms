@@ -1,0 +1,6 @@
+#filterPays,#filterFermier{
+    display: inline-block;
+    padding:2px;
+    border:3px double blue;
+    box-sizing: border-box;
+}
